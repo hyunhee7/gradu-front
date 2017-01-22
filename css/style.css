@@ -48,7 +48,7 @@
   font-size: 12px;
   padding: 7px 12px;
   border-radius: 100px;
-  border: solid 1px #3591cd; }
+  border: solid 1px #46C994; }
 
 .full-button-white {
   background-color: white;
@@ -116,9 +116,11 @@ body {
         height: auto;
         padding: 10px; }
     .signup-wrapper .form-signup .photo-wrap {
-      margin: 10px 0 0 10px;
+      margin: 40px 0 0 10px;
       width: 100px;
       text-align: center; }
+    .signup-wrapper .form-signup .main-line-button {
+      margin-top: 10px; }
     .signup-wrapper .form-signup .line-input-main:not(:last-child) {
       margin-bottom: 10px; }
   .signup-wrapper .container {
@@ -181,7 +183,7 @@ body {
   font-size: 12px;
   padding: 7px 12px;
   border-radius: 100px;
-  border: solid 1px #3591cd; }
+  border: solid 1px #46C994; }
 
 .file_input_hidden {
   position: absolute;
