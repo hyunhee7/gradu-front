@@ -1,0 +1,114 @@
+/*!
+ * Start Bootstrap - Shop Homepage (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+@import url('https://fonts.googleapis.com/css?family=Hind:600');
+@charset "utf-8";
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    font-family:'NanumGothic', sans-serif;
+    line-height: 1.15; /* 2 */
+   	
+}
+
+.logo {
+	font-family: 'Fredoka One', cursive;
+	font-size:25px;
+}
+.nav-menu{
+	font-family: 'Hind', sans-serif;
+	font-weight:bold;
+	font-size:14px;
+}
+
+.slide-image {
+    width: 100%;
+}
+
+.carousel-holder {
+    margin-bottom: 30px;
+}
+
+.carousel-control,
+.item {
+    border-radius: 4px;
+}
+
+.caption {
+    height: 130px;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: nowrap;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #d17581;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #46C994;
+}
+.navbar-user{
+	background-color:#46C994;
+	border-bottom:#46C994;
+}
+.navbar-inverse .navbar-nav>li{
+	text-align:center;
+
+}
+.navbar-inverse .navbar-nav>li>a {
+	color:#ffffff;
+	padding-right:4px;
+	padding-left:4px;
+	margin-right:10px;
+	margin-left:10px;
+}
+.navbar-inverse .navbar-brand {
+	color:#ffffff;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+	border-bottom: 2px solid white;
+	padding-bottom:2px;
+	padding-right:4px;
+	padding-left:4px;
+}
+.navbar-inverse .navbar-brand:hover {
+	color:#E3E3E3;
+
+}
+.navbar-inverse .navbar-toggle {
+	color:#ffffff;
+	border-color:#46C994;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+	border-color:#44C28F;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+	/*background-color:#44C28F;*/
+	border-bottom: 3px solid white;
+	margin-bottom:1px;
+}
+.navbar-location {
+	float:right;
+}
+footer {
+    margin: 50px 0;
+}
