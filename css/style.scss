@@ -1,0 +1,255 @@
+
+@charset "utf-8";
+$main-color: #46C994;
+$input-height: 46px;
+$text-color: #4a4a4a;
+$text-color-light: #b5b5b5;
+$bg-color: #f7f8f9;
+$line-color: #e9e9e9;
+ 
+$button-height: 46px;
+$input-height: 46px;
+ 
+$base-font-size: 14px;
+ 
+$header-height: 60px;
+* {
+  -webkit-text-size-adjust: none;
+  max-width: 100%;
+}
+.background-main {
+  background-color: $main-color;
+}
+.login-wrapper{
+  width:100%;
+  margin-top:80px;
+}
+.logo {
+  color: white;
+  font-size: 34px;
+  margin:10px;
+}
+.sublogo{
+  color: white;
+  font-size:14px;
+}
+.width-center {
+  text-align: center;
+}
+.button-none {
+  border: 0;
+  background: none;
+  padding:0 7px 0 0;
+}
+.line-input-white {
+  letter-spacing: 1px;
+  width: 100%;
+  height: $input-height;
+  color: white;
+  border: 0;
+  border-bottom: 1px solid white;
+  background: none;
+  padding-left: 4px;
+ 
+  &:focus {
+    border-bottom: 2px solid white;
+  }
+}
+ 
+.main-line-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: $main-color;
+  background-color: white;
+  display: inline;
+  font-size: 12px;
+  padding: 7px 12px;
+  border-radius: 100px;
+  border: solid 1px #3591cd;
+}
+.full-button-white {
+  background-color: white;
+  color: $main-color;
+  height: $button-height;
+  font-weight:bold;
+  width: 100%;
+  border: 0;
+  border-radius: 3px;
+}
+.line-input-white::-webkit-input-placeholder {
+  color: white;
+  opacity: 0.6;
+}
+ 
+.line-input-main::-webkit-input-placeholder {
+  color: $text-color;
+  opacity: 0.6;
+}
+.form-login {
+  margin-top: 50px;
+  width: 100%;
+} 
+input:focus {
+  outline: none;
+}
+ 
+a:hover {
+  text-decoration: none;
+}
+ 
+body {
+  background-color: $bg-color;
+  color: $text-color;
+  font-size: $base-font-size;
+  letter-spacing: 0.3px;
+}
+ 
+.login-bottom {
+  margin-top: 23px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.login-bottom a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.login-bottom a:hover {
+  color: #CCCCCC;
+  text-decoration: none;
+}
+
+.popup-container {
+  overflow: auto;
+}
+
+.signup-wrapper {
+  height: 100%;
+  background-color: $main-color;
+  margin-top:50px;
+  .form-signup {
+    margin: 20px 50px;
+
+    .tag-wrap {
+      margin-top: 40px;
+
+      p {
+        font-weight: bold;
+
+      }
+
+      .input-group {
+        width: 100%;
+      }
+
+      .tags {
+        height: auto;
+        padding:10px;
+      }
+    }
+
+
+    .photo-wrap {
+      margin: 10px 0 0 10px;
+      width: 100px;
+      text-align: center;
+    }
+
+    .main-line-button {
+    }
+
+    .line-input-main {
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .container {
+    background-color: $main-color;
+  }
+
+  .logo {
+    margin: 40px 0;
+    text-align: center;
+  }
+
+  .popup-container {
+    margin: 0 auto;
+    width: 626px;
+    height: auto;
+    border-radius: 3px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
+    .popup-header {
+      height: 50px;
+      border-bottom: 1px solid $line-color;
+      line-height: 50px;
+      position: relative;
+
+      .ic-back {
+        position: absolute;
+        left: 20px;
+      }
+
+      .title {
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+.line-input-main {
+  letter-spacing: 1px;
+  width: 100%;
+  height: $input-height;
+  color: $text-color;
+  border: 0;
+  border-bottom: 1px solid $main-color;
+  background: none;
+  padding-left: 4px;
+ 
+  &:focus {
+    border-bottom: 2px solid $main-color;
+  }
+}
+.line-input-main::-webkit-input-placeholder {
+  color: $text-color;
+  opacity: 0.6;
+}
+.full-button-main {
+  margin-top: 40px;
+  background-color: $main-color;
+  color: white;
+  height: $button-height;
+  width: 100%;
+  border: 0;
+  border-radius: 3px;
+}
+.main-line-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: $main-color;
+  background-color: white;
+  display: inline;
+  font-size: 12px;
+  padding: 7px 12px;
+  border-radius: 100px;
+  border: solid 1px #3591cd;
+}
+.file_input_hidden {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: alpha(opacity=0);
+  cursor: pointer;
+}
