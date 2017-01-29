@@ -8,13 +8,15 @@
 @import url('https://fonts.googleapis.com/css?family=Hind:600');
 @charset "utf-8";
 
+a:link{
+  text-decoration: none!important;
+}
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     font-family:'NanumGothic', sans-serif;
     line-height: 1.15; /* 2 */
    	
 }
-
 .logo {
 	font-family: 'Fredoka One', cursive;
 	font-size:25px;
@@ -90,6 +92,12 @@ body {
 	padding-right:4px;
 	padding-left:4px;
 }
+.navbar-inverse .navbar-nav>.nav-menu2>i:hover{
+	border-bottom: 0px;
+	padding-bottom:2px;
+	padding-right:4px;
+	padding-left:4px;
+}
 .navbar-inverse .navbar-brand:hover {
 	color:#E3E3E3;
 
@@ -106,10 +114,122 @@ body {
 	border-bottom: 3px solid white;
 	margin-bottom:1px;
 }
+.navbar-inverse .navbar-toggle> .nav-menu2>i:focus, .navbar-inverse .navbar-toggle > .nav-menu2 >i:hover {
+	/*background-color:#44C28F;*/
+	border-bottom: 0px;
+	margin-bottom:1px;
+}
+
 .navbar-location {
 	float:right;
 }
+.navbar-location2 {
+	float:left;
+	margin-left:40px;
+}
+.img-circle {
+    border-radius: 50%;
+}
+.img-nav-size{
+	width:30px;
+	padding:-20px;
+	margin:-5px;
+}
+.profile-nav {
+	width:50px;
+}
+.profile-nav > li {
+	text-decoration:none;
+	list-style: none;
+	margin-top:15px;
+}
+.profile-nav > i {
+	font-size:60px;
+}
+.dropdown-menu3 {
+  position: fixed;
+  width: 170px;
+  left: auto;
+  top: 40px;
+  right: 10%;
+  margin-top: 10px;
+  padding: 0;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: solid 1px #e9e9e9;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+  .dropdown-input {
+    padding: 0 10px;
+    width: 100%;
+    height: 36px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: solid 1px #e9e9e9;
+    margin-bottom: 10px;
+  }
+ 
+.dropdown-header {
+  height: 80px;
+  padding: 0;
+  border: solid 1px #E9E9E9;
+  }
+.dropdown-header:hover{
+	background-color:#F7F8F9;
+	
+}
+.dropdown-menu1{
+  height: 40px;
+  padding: 0;
+  border-bottom: solid 1px #E9E9E9;	
+  font-size:15px;
+  text-align:left;
+  color:#000000;
+  padding-top:10px;
+  padding-bottom:10px;
+  text-decoration:none;
+}
+.dropdown-menu1:hover{
+	background-color:#F7F8F9;
+}
+.dropdown-menu1 > i {
+	margin:0 20px 0 20px;
+}
 
+.profile-name {
+  width:100px;
+  float:right;
+  text-align: left;
+  font-size: 15px;
+  color: #000000;
+  margin-top: 20px;
+}
+.profile-subname{
+  text-align: left;
+  font-size: 11px;
+  color: #C0C0C0;	
+}
+.dropdown{
+    position: absolute;
+    display: inline; 
+}
+.dropdown-menu{
+  margin-right:-100px;
+  min-width: 190px;
+}
+.full-button-main {
+  margin-top: 40px;
+  background-color: #46C994;
+  color: white;
+  height: 46px;
+  width: 100%;
+  border: 0;
+  border-radius: 3px;
+}
+.img-nav-size2 {
+  width:50px;
+  margin:15px 4px 15px 15px;
+}
 footer {
     margin: 50px 0;
 }

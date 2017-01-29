@@ -11,8 +11,12 @@
 
     <title>메인페이지</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/shop-homepage.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/shop-homepage.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">  	
+	   
+    <script src="./js/bootstrap.min.js"></script>  
+  	<script src="./js/jquery.ajax-cross-origin.min.js"></script>          
 </head>
 
 <body>
@@ -30,20 +34,71 @@
                 </button>
                 <a class="navbar-brand logo" href="#">de velop</a>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-location" id="bs-example-navbar-collapse-1">
+            <div class="navbar-location2">
                 <ul class="nav navbar-nav nav-menu">
                     <li>
-                        <a href="#">BOOKMARK</a>
+                        <a href="#">MyBookmark</a>
                     </li>
                     <li>
-                        <a href="#">MESSAGE</a>
+                        <a href="#">AllBookmark</a>
                     </li>
                     <li>
-                        <a href="#">MYPAGE</a>
+                        <a href="#">User</a>
+                    </li>
+                    <li>
+                        <a href="#">Tag</a>
+                    </li>                    
+                </ul>               	
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-location" id="bs-example-navbar-collapse-1">         	
+	            <ul class="profile-nav" style="float:right;">
+	                    <li>
+	                    	<div class="dropdown">
+				                <a id="bookmark-add-button" class="dropdown-toggle" data-toggle="dropdown" href="#"><img
+				                        src="./img/img-profile-empty.png" class="img-nav-size"></a>
+				                <div class="dropdown-menu dropdown-menu3 extended inbox">
+				                    <a href="#">
+				                    	<div class="dropdown-header">
+					                    	<img src="./img/img-profile-empty.png" class="img-nav-size2">
+					                        <div class="profile-name"><strong>Hyunhee</strong>님<br>
+					                        	<span class="profile-subname">프로필로 이동</span>
+					                        </div>
+				                    	</div>
+				                    </a>
+				                    <a href="#">
+										<div class="dropdown-menu1">
+											<i class="fa fa-question-circle" aria-hidden="true"></i>도움말
+										</div>
+									</a>	
+									<a href="#">	
+										<div class="dropdown-menu1">
+											<i class="fa fa-cog" aria-hidden="true"></i>설정
+										</div>
+									</a>	
+									<a href="#">	
+										<div class="dropdown-menu1">
+											<i class="fa fa-sign-out" aria-hidden="true"></i>로그아웃
+										</div>		
+									</a>																	
+				                </div>	  
+			                </div>                  	
+	                    </li>
+	            </ul>               	
+                <ul class="nav navbar-nav nav-menu nav-menu2">
+                    <li>
+                        <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-comments" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
                     </li>
                 </ul>
+
             </div>
+                 
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
