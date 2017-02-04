@@ -14,7 +14,8 @@
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/shop-homepage.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">  	
-	   
+	<link rel="stylesheet" href="./css/reset.css"> 
+	  
     <script src="./js/bootstrap.min.js"></script>  
   	<script src="./js/jquery.ajax-cross-origin.min.js"></script>          
 </head>
@@ -34,7 +35,7 @@
                 </button>
                 <a class="navbar-brand logo" href="#">de velop</a>
             </div>
-            <div class="navbar-location2">
+            <div class="navbar-location2 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav nav-menu">
                     <li>
                         <a href="#">MyBookmark</a>
@@ -51,7 +52,7 @@
                 </ul>               	
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-location" id="bs-example-navbar-collapse-1">         	
+            <div class="navbar-location  mobile-hidden">         	
 	            <ul class="profile-nav" style="float:right;">
 	                    <li>
 	                    	<div class="dropdown">
@@ -85,10 +86,12 @@
 			                </div>                  	
 	                    </li>
 	            </ul>               	
-                <ul class="nav navbar-nav nav-menu nav-menu2">
+                <ul class="nav navbar-nav nav-menu nav-menu2 mobile-hidden">
                     <li>
-                        <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                        <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus" aria-hidden="true" ></i></a>
                     </li>
+                    
+                    
                     <li>
                         <a href="#"><i class="fa fa-comments" aria-hidden="true"></i></a>
                     </li>
@@ -108,134 +111,265 @@
     <div class="container">
 
         <div class="row">
-
-            <div class="col-md-3">
-                <p class="lead">Shop Name</p>
-                <div class="list-group">
-                    <a href="#" class="list-group-item">Category 1</a>
-                    <a href="#" class="list-group-item">Category 2</a>
-                    <a href="#" class="list-group-item">Category 3</a>
-                </div>
-            </div>
-
-            <div class="col-md-9">
+        	<div class="col-md-12 main-nav" style="margin-top:10px;">
+        		<div class="col-md-3">
+        			<div class="selected-category">My Bookmark</div>
+        		</div>
+        		<div class="col-md-offset-3 col-md-3">
+					<div class="dropdown" style="margin-left:60px;">
+					  <button class="btn btn-default dropdown-toggle btn-category" type="button" data-toggle="dropdown">태그별 분류보기
+					  <span class="caret"></span></button>
+					  <ul class="dropdown-menu">
+					    <li><a href="#">HTML</a></li>
+					    <li><a href="#">CSS</a></li>
+					    <li><a href="#">JavaScript</a></li>
+					  </ul>
+					</div> 								      			
+        		</div>
+        		<div class="col-md-3">
+		            <div id="imaginary_container"> 
+		                <div class="input-group stylish-input-group">
+		                    <input type="text" class="form-control"  placeholder="Search" >
+		                    <span class="input-group-addon">
+		                        <button type="submit">
+		                            <span class="glyphicon glyphicon-search"></span>
+		                        </button>  
+		                    </span>
+		                </div>
+		            </div>
+		        </div>    	        		
+        	</div>
+        	
+            <div class="col-md-12" style="margin-top:40px;">
                 <div class="row">
 
-                    <div class="col-sm-4 col-lg-4 col-md-4">
+                    <div class="selected-card col-sm-3 col-lg-3 col-md-3">
                         <div class="thumbnail">
+                            <div class="bk-subject">
+                                <h4 class="pull-right"><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></h4>
+                                <h4><a href="#">Stackoverflow</a></h4>
+                            </div>                        	
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
-                                <h4 class="pull-right">$24.99</h4>
-                                <h4><a href="#">First Product</a>
-                                </h4>
-                                <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+                                <div class="bk-domain"><a href="#">www.stackoverflow.com</a></div>
+ 								<div class="bk-tags">
+ 									<div class="tag"><a href="#">html</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">123456789012345678901234</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 								</div>
                             </div>
                             <div class="ratings">
-                                <p class="pull-right">15 reviews</p>
+                                <div class="personal-change">
+                                	<div class="edit-icon"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>                                	
+                                	<div class="edit-icon"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                                </div>
                                 <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
+                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i> +60 
+                                    <!--<i class="fa fa-thumbs-down" aria-hidden="true"></i> 2-->
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-4 col-lg-4 col-md-4">
+                    <div class="selected-card col-sm-3 col-lg-3 col-md-3">
                         <div class="thumbnail">
+                            <div class="bk-subject">
+                                <h4 class="pull-right"><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></h4>
+                                <h4><a href="#">Stackoverflow</a></h4>
+                            </div>                        	
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
-                                <h4 class="pull-right">$64.99</h4>
-                                <h4><a href="#">Second Product</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="bk-domain"><a href="#">www.stackoverflow.com</a></div>
+ 								<div class="bk-tags">
+ 									<div class="tag"><a href="#">html</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">123456789012345678901234</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 								</div>
                             </div>
                             <div class="ratings">
-                                <p class="pull-right">12 reviews</p>
+                                <div class="personal-change">
+                                	<div class="edit-icon"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>                                	
+                                	<div class="edit-icon"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                                </div>
                                 <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i> +60 
+                                    <!--<i class="fa fa-thumbs-down" aria-hidden="true"></i> 2-->
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-4 col-lg-4 col-md-4">
+                    <div class="selected-card col-sm-3 col-lg-3 col-md-3">
                         <div class="thumbnail">
+                            <div class="bk-subject">
+                                <h4 class="pull-right"><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></h4>
+                                <h4><a href="#">Stackoverflow</a></h4>
+                            </div>                        	
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
-                                <h4 class="pull-right">$74.99</h4>
-                                <h4><a href="#">Third Product</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="bk-domain"><a href="#">www.stackoverflow.com</a></div>
+ 								<div class="bk-tags">
+ 									<div class="tag"><a href="#">html</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">123456789012345678901234</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 								</div>
                             </div>
                             <div class="ratings">
-                                <p class="pull-right">31 reviews</p>
+                                <div class="personal-change">
+                                	<div class="edit-icon"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>                                	
+                                	<div class="edit-icon"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                                </div>
                                 <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i> +60 
+                                    <!--<i class="fa fa-thumbs-down" aria-hidden="true"></i> 2-->
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-4 col-lg-4 col-md-4">
+                    <div class="selected-card col-sm-3 col-lg-3 col-md-3">
                         <div class="thumbnail">
+                            <div class="bk-subject">
+                                <h4 class="pull-right"><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></h4>
+                                <h4><a href="#">Stackoverflow</a></h4>
+                            </div>                        	
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
-                                <h4 class="pull-right">$84.99</h4>
-                                <h4><a href="#">Fourth Product</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="bk-domain"><a href="#">www.stackoverflow.com</a></div>
+ 								<div class="bk-tags">
+ 									<div class="tag"><a href="#">html</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">123456789012345678901234</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 								</div>
                             </div>
                             <div class="ratings">
-                                <p class="pull-right">6 reviews</p>
+                                <div class="personal-change">
+                                	<div class="edit-icon"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>                                	
+                                	<div class="edit-icon"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                                </div>
                                 <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i> +60 
+                                    <!--<i class="fa fa-thumbs-down" aria-hidden="true"></i> 2-->
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-4 col-lg-4 col-md-4">
+                    <div class="selected-card col-sm-3 col-lg-3 col-md-3">
                         <div class="thumbnail">
+                            <div class="bk-subject">
+                                <h4 class="pull-right"><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></h4>
+                                <h4><a href="#">Stackoverflow</a></h4>
+                            </div>                        	
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
-                                <h4 class="pull-right">$94.99</h4>
-                                <h4><a href="#">Fifth Product</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="bk-domain"><a href="#">www.stackoverflow.com</a></div>
+ 								<div class="bk-tags">
+ 									<div class="tag"><a href="#">html</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">123456789012345678901234</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 								</div>
                             </div>
                             <div class="ratings">
-                                <p class="pull-right">18 reviews</p>
+                                <div class="personal-change">
+                                	<div class="edit-icon"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>                                	
+                                	<div class="edit-icon"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                                </div>
                                 <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i> +60 
+                                    <!--<i class="fa fa-thumbs-down" aria-hidden="true"></i> 2-->
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        <h4><a href="#">Like this template?</a>
-                        </h4>
-                        <p>If you like this template, then check out <a target="_blank" href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this tutorial</a> on how to build a working review system for your online store!</p>
-                        <a class="btn btn-primary" target="_blank" href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">View Tutorial</a>
+                    <div class="selected-card col-sm-3 col-lg-3 col-md-3">
+                        <div class="thumbnail">
+                            <div class="bk-subject">
+                                <h4 class="pull-right"><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></h4>
+                                <h4><a href="#">Stackoverflow</a></h4>
+                            </div>                        	
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <div class="bk-domain"><a href="#">www.stackoverflow.com</a></div>
+ 								<div class="bk-tags">
+ 									<div class="tag"><a href="#">html</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">123456789012345678901234</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 								</div>
+                            </div>
+                            <div class="ratings">
+                                <div class="personal-change">
+                                	<div class="edit-icon"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>                                	
+                                	<div class="edit-icon"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                                </div>
+                                <p>
+                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i> +60 
+                                    <!--<i class="fa fa-thumbs-down" aria-hidden="true"></i> 2-->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="selected-card col-sm-3 col-lg-3 col-md-3">
+                        <div class="thumbnail">
+                            <div class="bk-subject">
+                                <h4 class="pull-right"><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></h4>
+                                <h4><a href="#">Stackoverflow</a></h4>
+                            </div>                        	
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <div class="bk-domain"><a href="#">www.stackoverflow.com</a></div>
+ 								<div class="bk-tags">
+ 									<div class="tag"><a href="#">html</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">123456789012345678901234</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 									<div class="tag"><a href="#">css</a></div>
+ 								</div>
+                            </div>
+                            <div class="ratings">
+                                <div class="personal-change">
+                                	<div class="edit-icon"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>                                	
+                                	<div class="edit-icon"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                                </div>
+                                <p>
+                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i> +60 
+                                    <!--<i class="fa fa-thumbs-down" aria-hidden="true"></i> 2-->
+                                </p>
+                            </div>
+                        </div>
+                    </div>                    
+
+                    <div class="col-sm-3 col-lg-3 col-md-3 add-button">
+                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        <p>add bookmark!</p>
                     </div>
 
                 </div>
