@@ -167,6 +167,9 @@ body {
 .navbar-inverse .navbar-brand {
 	color:#ffffff;
 }
+.fixedd{
+	width:30px;
+}
 
 .navbar-inverse .navbar-nav>li>a:hover{
 	border-bottom: 2px solid white;
@@ -174,11 +177,8 @@ body {
 	padding-right:4px;
 	padding-left:4px;
 }
-.navbar-inverse .navbar-nav>.nav-menu2>i:hover{
-	border-bottom: 0px;
-	padding-bottom:2px;
-	padding-right:4px;
-	padding-left:4px;
+.nav-menu2{
+	font-size:16px;
 }
 .navbar-inverse .navbar-brand:hover {
 	color:#E3E3E3;
@@ -194,11 +194,6 @@ body {
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
 	/*background-color:#44C28F;*/
 	border-bottom: 3px solid white;
-	margin-bottom:1px;
-}
-.navbar-inverse .navbar-toggle> .nav-menu2>i:focus, .navbar-inverse .navbar-toggle > .nav-menu2 >i:hover {
-	/*background-color:#44C28F;*/
-	border-bottom: 0px;
 	margin-bottom:1px;
 }
 
@@ -222,6 +217,7 @@ body {
 	list-style: none;
 	margin-top:15px;
 }
+
 .profile-nav > i {
 	font-size:60px;
 }
@@ -257,6 +253,30 @@ body {
 	background-color:#F7F8F9;
 	
 }
+.dropdown-header2 {
+  height: 90px;
+  padding: 0;
+  border: solid 1px #E9E9E9;
+  margin-top:20px;
+  }
+.dropdown-header2:hover{
+	background-color:#F7F8F9;
+	
+}
+.selected-line{
+	border-bottom: 2px solid white;
+	padding-bottom:4px;
+	padding-right:4px;
+	padding-left:4px;
+}
+.selected-font{
+	color:#ffffff;
+	margin-top:17px;
+	padding-right:4px;
+	padding-left:4px;
+	margin-right:10px;
+	margin-left:10px;
+}
 .dropdown-menu1{
   height: 40px;
   padding: 0;
@@ -285,10 +305,39 @@ body {
   color: #000000;
   margin-top: 20px;
 }
+.profile-name2 {
+  width:180px;
+  float:right;
+  text-align: left;
+  font-size: 15px;
+  color: #000000;
+  margin-top: 20px;
+  
+}
 .profile-subname{
   text-align: left;
   font-size: 11px;
   color: #C0C0C0;	
+}
+.profile-info1{
+  text-align: left;
+  font-size: 11px;
+  color: #919191;	
+  margin-top:8px;	
+}
+.profile-info-tag {
+	text-decoration:none;
+	background-color:#46C994;
+	text-align:center;
+	font-size:12px;
+	font-family: 'Hind', sans-serif;
+	max-width:100px;
+	padding:3px 3px;
+	margin-top:5px;
+	display: inline-block;
+	text-overflow: ellipsis;
+  	overflow:hidden;	
+  	color:white;	
 }
 .dropdown{
     position: absolute;
@@ -309,6 +358,10 @@ body {
 }
 .img-nav-size2 {
   width:50px;
+  margin:19px 4px 15px 15px;
+}
+.img-nav-size3 {
+  width:20px;
   margin:15px 4px 15px 15px;
 }
 .stylish-input-group .input-group-addon{

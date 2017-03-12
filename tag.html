@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>메인페이지</title>
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/shop-homepage.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">  	
+	<link rel="stylesheet" href="./css/reset.css"> 
+	  
+    <script src="./js/bootstrap.min.js"></script>  
+  	<script src="./js/jquery.ajax-cross-origin.min.js"></script>          
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-user" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo" href="#">de velop</a>
+            </div>
+            <div class="navbar-location2 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav nav-menu">
+                    <li>
+                        <a href="main.html">MyBookmark</a>
+                    </li>
+                    <li>
+                        <a href="allbookmark.html">AllBookmark</a>
+                    </li>
+                    <li>
+                        <a href="user.html">User</p>
+                    </li>
+                    <li class="fixedd">
+                        <p class="selected-line selected-font">Tag</p>
+                    </li>                    
+                </ul>               	
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-location  mobile-hidden">         	
+	            <ul class="profile-nav" style="float:right;">
+	                    <li>
+	                    	<div class="dropdown">
+				                <a id="bookmark-add-button" class="dropdown-toggle" data-toggle="dropdown" href="#"><img
+				                        src="./img/img-profile-empty.png" class="img-nav-size"></a>
+				                <div class="dropdown-menu dropdown-menu3 extended inbox">
+				                    <a href="#">
+				                    	<div class="dropdown-header">
+					                    	<img src="./img/img-profile-empty.png" class="img-nav-size2">
+					                        <div class="profile-name"><strong>Hyunhee</strong>님<br>
+					                        	<span class="profile-subname">프로필로 이동</span>
+					                        </div>
+				                    	</div>
+				                    </a>
+				                    <a href="#">
+										<div class="dropdown-menu1">
+											<i class="fa fa-question-circle" aria-hidden="true"></i>도움말
+										</div>
+									</a>	
+									<a href="#">	
+										<div class="dropdown-menu1">
+											<i class="fa fa-cog" aria-hidden="true"></i>설정
+										</div>
+									</a>	
+									<a href="#">	
+										<div class="dropdown-menu1">
+											<i class="fa fa-sign-out" aria-hidden="true"></i>로그아웃
+										</div>		
+									</a>																	
+				                </div>	  
+			                </div>                  	
+	                    </li>
+	            </ul>               	
+                <ul class="nav navbar-nav nav-menu nav-menu2 mobile-hidden">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus" aria-hidden="true" ></i></a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+
+            </div>
+                 
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+        	<div class="col-md-12 main-nav" style="margin-top:10px;">
+        		<div class="col-md-3">
+        			<div class="selected-category">Users</div>
+        		</div>
+        		<div class="col-md-offset-3 col-md-3">
+					<div class="dropdown" style="margin-left:60px;">
+					  <button class="btn btn-default dropdown-toggle btn-category" type="button" data-toggle="dropdown">태그별 분류보기
+					  <span class="caret"></span></button>
+					  <ul class="dropdown-menu">
+					    <li><a href="#">HTML</a></li>
+					    <li><a href="#">CSS</a></li>
+					    <li><a href="#">JavaScript</a></li>
+					  </ul>
+					</div> 								      			
+        		</div>
+        		<div class="col-md-3">
+		            <div id="imaginary_container"> 
+		                <div class="input-group stylish-input-group">
+		                    <input type="text" class="form-control"  placeholder="Search" >
+		                    <span class="input-group-addon">
+		                        <button type="submit">
+		                            <span class="glyphicon glyphicon-search"></span>
+		                        </button>  
+		                    </span>
+		                </div>
+		            </div>
+		        </div>    	        		
+        	</div>
+        	
+            <div class="col-md-12" style="margin-top:20px;">
+                <div class="row">
+
+                    <div class="selected-card col-sm-3 col-lg-3 col-md-3">
+                        <div>
+                            <div class="user-info">
+				               	<div class="dropdown-header2">
+					           		<img src="./img/img-profile-empty.png" class="img-nav-size2">
+					                <div class="profile-name2"><strong>Hyunhee</strong>님<br>
+					               		<span class="profile-info1">Korea, Inchon</span>
+					               		<div class="bk-tags">
+						               		<div class="profile-info-tag">mysql</div>
+						               		<div class="profile-info-tag">jsp</div>
+						               		<div class="profile-info-tag">angularJS</div>
+					               		</div>
+					           		</div>
+				            	</div>                            	
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="selected-card col-sm-3 col-lg-3 col-md-3">
+                        <div>
+                            <div class="user-info">
+				               	<div class="dropdown-header2">
+					           		<img src="./img/img-profile-empty.png" class="img-nav-size2">
+					                <div class="profile-name2"><strong>Hyunhee</strong>님<br>
+					               		<span class="profile-info1">Korea, Inchon</span>
+					               		<div class="bk-tags">
+						               		<div class="profile-info-tag">mysql</div>
+						               		<div class="profile-info-tag">jsp</div>
+						               		<div class="profile-info-tag">angularJS</div>
+					               		</div>
+					           		</div>
+				            	</div>                            	
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="selected-card col-sm-3 col-lg-3 col-md-3">
+                        <div>
+                            <div class="user-info">
+				               	<div class="dropdown-header2">
+					           		<img src="./img/img-profile-empty.png" class="img-nav-size2">
+					                <div class="profile-name2"><strong>Hyunhee</strong>님<br>
+					               		<span class="profile-info1">Korea, Inchon</span>
+					               		<div class="bk-tags">
+						               		<div class="profile-info-tag">mysql</div>
+						               		<div class="profile-info-tag">jsp</div>
+						               		<div class="profile-info-tag">angularJS</div>
+					               		</div>
+					           		</div>
+				            	</div>                            	
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="selected-card col-sm-3 col-lg-3 col-md-3">
+                        <div>
+                            <div class="user-info">
+				               	<div class="dropdown-header2">
+					           		<img src="./img/img-profile-empty.png" class="img-nav-size2">
+					                <div class="profile-name2"><strong>Hyunhee</strong>님<br>
+					               		<span class="profile-info1">Korea, Inchon</span>
+					               		<div class="bk-tags">
+						               		<div class="profile-info-tag">mysql</div>
+						               		<div class="profile-info-tag">jsp</div>
+						               		<div class="profile-info-tag">angularJS</div>
+					               		</div>
+					           		</div>
+				            	</div>                            	
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="selected-card col-sm-3 col-lg-3 col-md-3">
+                        <div>
+                            <div class="user-info">
+				               	<div class="dropdown-header2">
+					           		<img src="./img/img-profile-empty.png" class="img-nav-size2">
+					                <div class="profile-name2"><strong>Hyunhee</strong>님<br>
+					               		<span class="profile-info1">Korea, Inchon</span>
+					               		<div class="bk-tags">
+						               		<div class="profile-info-tag">mysql</div>
+						               		<div class="profile-info-tag">jsp</div>
+						               		<div class="profile-info-tag">angularJS</div>
+					               		</div>
+					           		</div>
+				            	</div>                            	
+                            </div>
+                        </div>
+                    </div>                                                            
+ 
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+    <div class="container">
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
