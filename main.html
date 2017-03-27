@@ -13,11 +13,12 @@
 
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/shop-homepage.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">  	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
 	<link rel="stylesheet" href="./css/reset.css"> 
-	  
+
     <script src="./js/bootstrap.min.js"></script>  
-  	<script src="./js/jquery.ajax-cross-origin.min.js"></script>          
+  	<script src="./js/jquery.ajax-cross-origin.min.js"></script>      
+    <script src="./js/jquery-3.1.1.min.js"></script> 
 </head>
 
 <body>
@@ -85,45 +86,99 @@
 				                </div>	  
 			                </div>                  	
 	                    </li>
-	            </ul>               	
+	            </ul>    
+
+         	
                 <ul class="nav navbar-nav nav-menu nav-menu2 mobile-hidden">
                     <li>
-                        <a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-plus" aria-hidden="true" ></i></a>
+                        <a href="#" data-toggle="modal" data-target="#myModal" aria-hidden="true"><i class="fa fa-plus" ></i></a>
                     </li>
+                         <!-- Modal -->
+                          <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                <div class="modal-header add-title">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">북마크 추가하기</h4>
+                                </div>
+                                <div class="modal-body add-body row">
+                                    <div class="col-md-4">
+                                        <img src="./img/Tulips.jpg" class="add-img">
+                                    </div>
+                                    <div class="col-md-8 add-body-right">
+                                        <div class="form-group ">
+                                            <label for="example-text-input"><strong>주소</strong></label>
+                                            <input class="line-input" type="text" value="https://">
+                                        </div>     
+                                        <div class="form-group ">
+                                            <label for="example-text-input"><strong>설명</strong></label>
+                                            <input class="line-input" type="text">
+                                        </div>                                                    
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group ">
+                                            <label for="example-text-input"><strong>태그</strong></label>
+                                            <input class="line-input" type="text" placeholder="추가하실 태그를 입력하고 Enter키를 눌러주세요!">
+                                        </div> 
+                                    </div>
+                                    <div class="col-md-12 bk-tags">
+                                        <div class="profile-info-tag">mysql</div>
+                                        <div class="profile-info-tag">jsp</div>
+                                        <div class="profile-info-tag">angularJS</div>
+                                    </div>
+
+
+                                </div>
+                                <div class="add-footer">
+                                  <button type="button" class="full-button-main" data-dismiss="modal">확인</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>  
+                          <!--modal fin.-->  
+                                   
+
+                        <ul class="profile-nav" style="float:right;">
+                                <li>
+                                    <div class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                        <div class="dropdown-menu dropdown-menu3 extended inbox">
+                                            <a href="#">
+                                                <div class="dropdown-header">
+                                                    <img src="./img/img-profile-empty.png" class="img-nav-size2">
+                                                    <div class="profile-name"><strong>Hyunhee</strong>님<br>
+                                                        <span class="profile-subname">프로필로 이동</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="dropdown-menu1">
+                                                    <i class="fa fa-question-circle" aria-hidden="true"></i>도움말
+                                                </div>
+                                            </a>    
+                                            <a href="#">    
+                                                <div class="dropdown-menu1">
+                                                    <i class="fa fa-cog" aria-hidden="true"></i>설정
+                                                </div>
+                                            </a>    
+                                            <a href="#">    
+                                                <div class="dropdown-menu1">
+                                                    <i class="fa fa-sign-out" aria-hidden="true"></i>로그아웃
+                                                </div>      
+                                            </a>                                                                    
+                                        </div>    
+                                    </div>                      
+                                </li>
+                        </ul>      
                     
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>    
-    
-                    
-                    <li>
-                        <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>     
-                    </li>
+
                     <li>
                         <a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
                     </li>
                 </ul>
 
             </div>
-                 
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->

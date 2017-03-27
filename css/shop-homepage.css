@@ -27,7 +27,12 @@ body {
 	font-weight:bold;
 	font-size:14px;
 }
-
+.modal-backdrop {
+  z-index: 0;
+}
+.input-group .form-control{
+	z-index:0;
+}
 .slide-image {
     width: 100%;
 }
@@ -117,6 +122,47 @@ body {
 	color:white;
 	
 }
+.tag-head {
+	text-decoration:none;
+	text-align:center;
+	font-size:15px;
+	font-family: 'Hind', sans-serif;
+	max-width:100px;
+	padding:3px 3px;
+	margin-top:5px;
+	display: inline-block;
+	text-overflow: ellipsis;
+  	overflow:hidden;		
+  	margin:11px 3px 3px 10px;
+  	float:left;
+}
+.tag-head > a {
+	color:#000000;
+}
+.tag-head > a:hover{
+	color: #46C994;	
+}
+.tag-count {
+	font-size:13px;
+	font-family: 'Hind', sans-serif;
+	max-width:100px;
+	padding:4px 0px;
+	margin-top:5px;		
+	display: inline-block;
+	text-overflow: ellipsis;
+  	overflow:hidden;		
+  	margin:12px 4px 3px 4px;
+  	float:left;	
+  	color:#969696;
+}
+.tag-detail {
+	max-height:57px;	
+	color:#969696;
+	clear:both;
+	font-size:13px;
+	margin: 7px 9px 7px 11px;
+	overflow: hidden;
+}
 
 .thumbnail img {
     width: 100%;
@@ -168,7 +214,8 @@ body {
 	color:#ffffff;
 }
 .fixedd{
-	width:30px;
+	width:50px;
+	float:left;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover{
@@ -261,13 +308,66 @@ body {
   }
 .dropdown-header2:hover{
 	background-color:#F7F8F9;
-	
+}
+.dropdown-header3 {
+  height: 120px;
+  padding: 0;
+  border: solid 1px #E9E9E9;
+  margin-top:20px;
+  }
+ .line-input {
+  width: 100%;
+  height:30px;
+  border: 0px;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #46C994;
+  background: none;
+ }
+input[type=text] {
+    border-bottom: 2px solid #46C994;
+  }
+.form-group > label {
+	color:#46C994;
+}
+ .line-input-main::-webkit-input-placeholder {
+  color: #000000;
+  opacity: 0.6;
+}
+.add-title {
+	text-align:center;
+	background-color:#46C994;
+	color:#ffffff;
+
+}
+.add-title > h4{
+	font-weight: bold;
+}
+.add-img {
+	width:200px;
+	width:170px;
+	margin-top:10px;
+}
+.add-body {
+	margin:7px;
+}
+.add-body-right{
+	padding:7px 20px;
+	margin-top:10px;	
+}
+.add-footer > button{
+	width: 90%;
+	margin:20px;
 }
 .selected-line{
 	border-bottom: 2px solid white;
 	padding-bottom:4px;
 	padding-right:4px;
 	padding-left:4px;
+}
+.selected-line2{
+	border-bottom: 2px solid white;
+	padding-bottom:4px;
+
 }
 .selected-font{
 	color:#ffffff;
