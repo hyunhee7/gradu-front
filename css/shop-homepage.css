@@ -210,20 +210,35 @@ body {
 	margin-right:10px;
 	margin-left:10px;
 }
+.navbar-inverse .navbar-nav>li>.dropdown>a {
+	color:#ffffff;
+	padding-right:4px;
+	padding-left:4px;
+	margin-right:10px;
+	margin-left:10px;
+	margin-top: 15px;
+}
 .navbar-inverse .navbar-brand {
 	color:#ffffff;
 }
+
 .fixedd{
 	width:50px;
 	float:left;
 }
-
 .navbar-inverse .navbar-nav>li>a:hover{
 	border-bottom: 2px solid white;
 	padding-bottom:2px;
 	padding-right:4px;
 	padding-left:4px;
 }
+.navbar-inverse .navbar-nav>li>.dropdown>a:hover{
+	border-bottom: 2px solid white;
+	padding-bottom:2px;
+	padding-right:4px;
+	padding-left:4px;
+}
+
 .nav-menu2{
 	font-size:16px;
 }
@@ -281,6 +296,19 @@ body {
   border: solid 1px #e9e9e9;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
+.dropdown-menu4 {
+  position: fixed;
+  width: 300px;
+  left: auto;
+  top: 40px;
+  right: 15%;
+  margin-top: 10px;
+  padding: 0;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: solid 1px #e9e9e9;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
   .dropdown-input {
     padding: 0 10px;
     width: 100%;
@@ -314,7 +342,8 @@ body {
   padding: 0;
   border: solid 1px #E9E9E9;
   margin-top:20px;
-  }
+  } 
+
  .line-input {
   width: 100%;
   height:30px;
@@ -412,12 +441,36 @@ input[type=text] {
   font-size: 15px;
   color: #000000;
   margin-top: 20px;
+
   
+}
+.profile-name3 {
+  width:215px;
+  float:right;
+  text-align: left;
+  font-size: 15px;
+  color: #000000;
+  margin-top: 20px;
+  overflow:hidden; 
+}
+.profile-name4 {
+  margin-left: 20px;
+  text-align: left;
+  font-size: 15px;
+  color: #000000;
+  margin-top: 20px;
+  overflow:hidden; 
 }
 .profile-subname{
   text-align: left;
   font-size: 11px;
   color: #C0C0C0;	
+}
+.profile-subname2{
+  text-align: left;
+  font-size: 12px;
+  color: #C0C0C0;
+
 }
 .profile-info1{
   text-align: left;
@@ -439,10 +492,7 @@ input[type=text] {
   	overflow:hidden;	
   	color:white;	
 }
-.dropdown{
-    position: absolute;
-    display: inline; 
-}
+
 .dropdown-menu{
   margin-right:-100px;
   min-width: 190px;
@@ -475,6 +525,23 @@ input[type=text] {
 .stylish-input-group button{
     border:0;
     background:transparent;
+}
+.li-envelope{
+	margin:15px 10px 0 0;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+	background-color: #46C994;
+}
+.dropdown-info{
+	height:30px;
+	padding:10px;
+}
+.more-button{
+	float:right;
+
+}
+.more-button:hover{
+	background-color: none;
 }
 @media (min-width: 1200px){
 	.navbar-location2 {
