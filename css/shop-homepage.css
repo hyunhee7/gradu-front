@@ -514,6 +514,27 @@ input[type=text] {
   width:20px;
   margin:15px 4px 15px 15px;
 }
+.user-info{
+	height: 300px;
+}
+.user-photo{
+	margin-top:30px;
+}
+
+.img-nav-size4 {
+  width:120px;
+  position: absolute;
+  top:40%;
+  left:40%;
+
+}
+.user-profile{
+	font-size:20px;
+}
+#user-tag{
+	float:left;
+	font-size: 20px;
+}
 .stylish-input-group .input-group-addon{
     background: white !important; 
 }
