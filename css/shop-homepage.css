@@ -70,7 +70,15 @@ body {
 .edit-icon{
 	float:right;
 }
-.edit-icon > a >i{
+.edit-icon2{
+	float:right;
+	padding: 12px 12px 0 0;
+	display: none;
+}
+.tag-info:hover .edit-icon2{
+	display: block;
+}
+.edit-icon > a > i{
 	color:#919191;
 	font-size:18px;
 	padding:5px;
