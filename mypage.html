@@ -19,6 +19,40 @@
     <script src="./js/bootstrap.min.js"></script>  
   	<script src="./js/jquery.ajax-cross-origin.min.js"></script>      
     <script src="./js/jquery-3.1.1.min.js"></script> 
+    <script type="text/javascript" src="./js/canvasjs.min.js"></script>
+
+    <!-- tag chart start-->
+    <script type="text/javascript">
+        window.onload = function () {
+            var chart = new CanvasJS.Chart("chartContainer",
+            {
+                title:{
+                    text: "Tag rank",
+                    verticalAlign: 'top',
+                    horizontalAlign: 'center'
+                },
+                        animationEnabled: true,
+                data: [
+                {        
+                    type: "doughnut",
+                    startAngle:20,
+                    toolTipContent: "{label}: {y} - <strong>#percent%</strong>",
+                    indexLabel: "{label} #percent%",
+                    dataPoints: [
+                        {  y: 67, label: "Inbox" },
+                        {  y: 28, label: "Archives" },
+                        {  y: 10, label: "Labels" },
+                        {  y: 7,  label: "Drafts"},
+                        {  y: 4,  label: "Trash"}
+                    ]
+                }
+                ]
+            });
+            chart.render();
+        }
+    </script>
+    <!-- tag chart fin.-->
+    
 </head>
 
 <body>
@@ -34,7 +68,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand logo" href="#">BONO</a>
+                <a class="navbar-brand logo" href="main.html">BONO</a>
             </div>
             <div class="navbar-location2 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav nav-menu">
@@ -60,7 +94,7 @@
 				                <a id="bookmark-add-button" class="dropdown-toggle" data-toggle="dropdown" href="#"><img
 				                        src="./img/img-profile-empty.png" class="img-nav-size"></a>
 				                <div class="dropdown-menu dropdown-menu3 extended inbox">
-				                    <a href="#">
+				                    <a href="mypage.html">
 				                    	<div class="dropdown-header">
 					                    	<img src="./img/img-profile-empty.png" class="img-nav-size2">
 					                        <div class="profile-name"><strong>Hyunhee</strong>님<br>
@@ -231,7 +265,7 @@
     <!-- Page Content -->
     <div class="container">
         <div class="row">
-            <div class="user-info col-xs-12">
+            <div class="user-info2 col-xs-12">
                 <div class="user-profile col-xs-6 col-xs-offset-3">
                     <div class="user-photo">
                         <img src="./img/img-profile-empty.png" class="img-nav-size4">
@@ -257,6 +291,16 @@
         </div>
     </div>
     <!-- user info fin-->
+
+    <!-- tagRank list start-->
+    <div class="container">
+        <div class="row">
+            <div class="list-container col-xs-12">
+                <div id="chartContainer" style="height: 350px; width: 100%;"></div>
+            </div>
+        </div>
+    </div>    
+    <!-- tagRank list fin.-->
 
     <!-- book mark list start-->
     <div class="container">
@@ -301,19 +345,109 @@
                         </div>
                     </div>
                     <!--card1 fin.-->
-                    
+                    <!--card 2-->
+                    <div class="selected-card col-sm-3 col-lg-3 col-md-3">
+                        <div class="thumbnail">
+                            <div class="bk-subject">
+                                <h4 class="pull-right"><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></h4>
+                                <h4><a href="#">Stackoverflow</a></h4>
+                            </div>                          
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <div class="bk-domain"><a href="#">www.stackoverflow.com</a></div>
+                                <div class="bk-tags">
+                                    <div class="tag"><a href="#">html</a></div>
+                                    <div class="tag"><a href="#">css</a></div>
+                                    <div class="tag"><a href="#">123456789012345678901234</a></div>
+                                    <div class="tag"><a href="#">css</a></div>
+                                    <div class="tag"><a href="#">css</a></div>
+                                    <div class="tag"><a href="#">css</a></div>
+                                    <div class="tag"><a href="#">css</a></div>
+                                </div>
+                            </div>
+                            <div class="ratings">
+                                <div class="personal-change">
+                                    <div class="edit-icon"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>                                 
+                                    <div class="edit-icon"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                                </div>
+                                <p>
+                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i> +60 
+                                    <!--<i class="fa fa-thumbs-down" aria-hidden="true"></i> 2-->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card2 fin.-->
+                    <!--card 3-->
+                    <div class="selected-card col-sm-3 col-lg-3 col-md-3">
+                        <div class="thumbnail">
+                            <div class="bk-subject">
+                                <h4 class="pull-right"><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></h4>
+                                <h4><a href="#">Stackoverflow</a></h4>
+                            </div>                          
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <div class="bk-domain"><a href="#">www.stackoverflow.com</a></div>
+                                <div class="bk-tags">
+                                    <div class="tag"><a href="#">html</a></div>
+                                    <div class="tag"><a href="#">css</a></div>
+                                    <div class="tag"><a href="#">123456789012345678901234</a></div>
+                                    <div class="tag"><a href="#">css</a></div>
+                                    <div class="tag"><a href="#">css</a></div>
+                                    <div class="tag"><a href="#">css</a></div>
+                                    <div class="tag"><a href="#">css</a></div>
+                                </div>
+                            </div>
+                            <div class="ratings">
+                                <div class="personal-change">
+                                    <div class="edit-icon"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>                                 
+                                    <div class="edit-icon"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                                </div>
+                                <p>
+                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i> +60 
+                                    <!--<i class="fa fa-thumbs-down" aria-hidden="true"></i> 2-->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card3 fin.-->                                        
+                    <!--card 3-->
+                    <div class="selected-card col-sm-3 col-lg-3 col-md-3">
+                        <div class="thumbnail">
+                            <div class="bk-subject">
+                                <h4 class="pull-right"><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></h4>
+                                <h4><a href="#">Stackoverflow</a></h4>
+                            </div>                          
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <div class="bk-domain"><a href="#">www.stackoverflow.com</a></div>
+                                <div class="bk-tags">
+                                    <div class="tag"><a href="#">html</a></div>
+                                    <div class="tag"><a href="#">css</a></div>
+                                    <div class="tag"><a href="#">123456789012345678901234</a></div>
+                                    <div class="tag"><a href="#">css</a></div>
+                                    <div class="tag"><a href="#">css</a></div>
+                                    <div class="tag"><a href="#">css</a></div>
+                                    <div class="tag"><a href="#">css</a></div>
+                                </div>
+                            </div>
+                            <div class="ratings">
+                                <div class="personal-change">
+                                    <div class="edit-icon"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>                                 
+                                    <div class="edit-icon"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                                </div>
+                                <p>
+                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i> +60 
+                                    <!--<i class="fa fa-thumbs-down" aria-hidden="true"></i> 2-->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card3 fin.-->                       
                 </div>
             </div>
         </div>
     </div>
-    <!-- book mark list fin.-->
-    <!-- book mark list start-->
-    <div class="container">
-        <div class="row">
-            <div class="list-container col-xs-12">
-            </div>
-        </div>
-    </div>    
     <!-- book mark list fin.-->
 
     <!-- Footer -->

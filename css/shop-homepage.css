@@ -528,6 +528,9 @@ input[type=text] {
 }
 .user-info{
 	height: 550px;
+}
+.user-info2{
+	height: 550px;
 	border:1px solid #e9e9e9;
 }
 .user-photo{
