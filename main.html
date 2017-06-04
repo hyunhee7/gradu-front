@@ -13,16 +13,24 @@
 
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/shop-homepage.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
-	<link rel="stylesheet" href="./css/reset.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="./css/reset.css"> 
+    <script src="js/jquery.js"></script>
 
-    <script src="./js/bootstrap.min.js"></script>  
-  	<script src="./js/jquery.ajax-cross-origin.min.js"></script>      
+<!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="./js/jquery.ajax-cross-origin.min.js"></script>      
     <script src="./js/jquery-3.1.1.min.js"></script> 
+    <script src="./js/makeMyBookmarkView.js"></script>
+    <script>
+	$(document).ready(function() {
+		makeMyBookmarkView('/users/myBookmarks');
+	});
+    </script>
 </head>
 
 <body>
-
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top navbar-user" role="navigation">
         <div class="container">
@@ -263,237 +271,7 @@
         	</div>
         	
             <div class="col-md-12" style="margin-top:40px;">
-                <div class="row">
-
-                    <div class="selected-card col-sm-3 col-lg-3 col-md-3">
-                        <div class="thumbnail">
-                            <div class="bk-subject">
-                                <h4 class="pull-right"><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></h4>
-                                <h4><a href="detail.html">Stackoverflow</a></h4>
-                            </div>                        	
-                            <img src="http://placehold.it/320x150" alt="">
-                            <div class="caption">
-                                <div class="bk-domain"><a href="#">www.stackoverflow.com</a></div>
- 								<div class="bk-tags">
- 									<div class="tag"><a href="#">html</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">123456789012345678901234</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 								</div>
-                            </div>
-                            <div class="ratings">
-                                <div class="personal-change">
-                                	<div class="edit-icon"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>                                	
-                                	<div class="edit-icon"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
-                                </div>
-                                <p>
-                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i> +60 
-                                    <!--<i class="fa fa-thumbs-down" aria-hidden="true"></i> 2-->
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="selected-card col-sm-3 col-lg-3 col-md-3">
-                        <div class="thumbnail">
-                            <div class="bk-subject">
-                                <h4 class="pull-right"><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></h4>
-                                <h4><a href="#">Stackoverflow</a></h4>
-                            </div>                        	
-                            <img src="http://placehold.it/320x150" alt="">
-                            <div class="caption">
-                                <div class="bk-domain"><a href="#">www.stackoverflow.com</a></div>
- 								<div class="bk-tags">
- 									<div class="tag"><a href="#">html</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">123456789012345678901234</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 								</div>
-                            </div>
-                            <div class="ratings">
-                                <div class="personal-change">
-                                	<div class="edit-icon"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>                                	
-                                	<div class="edit-icon"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
-                                </div>
-                                <p>
-                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i> +60 
-                                    <!--<i class="fa fa-thumbs-down" aria-hidden="true"></i> 2-->
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="selected-card col-sm-3 col-lg-3 col-md-3">
-                        <div class="thumbnail">
-                            <div class="bk-subject">
-                                <h4 class="pull-right"><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></h4>
-                                <h4><a href="#">Stackoverflow</a></h4>
-                            </div>                        	
-                            <img src="http://placehold.it/320x150" alt="">
-                            <div class="caption">
-                                <div class="bk-domain"><a href="#">www.stackoverflow.com</a></div>
- 								<div class="bk-tags">
- 									<div class="tag"><a href="#">html</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">123456789012345678901234</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 								</div>
-                            </div>
-                            <div class="ratings">
-                                <div class="personal-change">
-                                	<div class="edit-icon"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>                                	
-                                	<div class="edit-icon"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
-                                </div>
-                                <p>
-                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i> +60 
-                                    <!--<i class="fa fa-thumbs-down" aria-hidden="true"></i> 2-->
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="selected-card col-sm-3 col-lg-3 col-md-3">
-                        <div class="thumbnail">
-                            <div class="bk-subject">
-                                <h4 class="pull-right"><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></h4>
-                                <h4><a href="#">Stackoverflow</a></h4>
-                            </div>                        	
-                            <img src="http://placehold.it/320x150" alt="">
-                            <div class="caption">
-                                <div class="bk-domain"><a href="#">www.stackoverflow.com</a></div>
- 								<div class="bk-tags">
- 									<div class="tag"><a href="#">html</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">123456789012345678901234</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 								</div>
-                            </div>
-                            <div class="ratings">
-                                <div class="personal-change">
-                                	<div class="edit-icon"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>                                	
-                                	<div class="edit-icon"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
-                                </div>
-                                <p>
-                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i> +60 
-                                    <!--<i class="fa fa-thumbs-down" aria-hidden="true"></i> 2-->
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="selected-card col-sm-3 col-lg-3 col-md-3">
-                        <div class="thumbnail">
-                            <div class="bk-subject">
-                                <h4 class="pull-right"><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></h4>
-                                <h4><a href="#">Stackoverflow</a></h4>
-                            </div>                        	
-                            <img src="http://placehold.it/320x150" alt="">
-                            <div class="caption">
-                                <div class="bk-domain"><a href="#">www.stackoverflow.com</a></div>
- 								<div class="bk-tags">
- 									<div class="tag"><a href="#">html</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">123456789012345678901234</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 								</div>
-                            </div>
-                            <div class="ratings">
-                                <div class="personal-change">
-                                	<div class="edit-icon"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>                                	
-                                	<div class="edit-icon"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
-                                </div>
-                                <p>
-                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i> +60 
-                                    <!--<i class="fa fa-thumbs-down" aria-hidden="true"></i> 2-->
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="selected-card col-sm-3 col-lg-3 col-md-3">
-                        <div class="thumbnail">
-                            <div class="bk-subject">
-                                <h4 class="pull-right"><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></h4>
-                                <h4><a href="#">Stackoverflow</a></h4>
-                            </div>                        	
-                            <img src="http://placehold.it/320x150" alt="">
-                            <div class="caption">
-                                <div class="bk-domain"><a href="#">www.stackoverflow.com</a></div>
- 								<div class="bk-tags">
- 									<div class="tag"><a href="#">html</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">123456789012345678901234</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 								</div>
-                            </div>
-                            <div class="ratings">
-                                <div class="personal-change">
-                                	<div class="edit-icon"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>                                	
-                                	<div class="edit-icon"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
-                                </div>
-                                <p>
-                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i> +60 
-                                    <!--<i class="fa fa-thumbs-down" aria-hidden="true"></i> 2-->
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="selected-card col-sm-3 col-lg-3 col-md-3">
-                        <div class="thumbnail">
-                            <div class="bk-subject">
-                                <h4 class="pull-right"><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></h4>
-                                <h4><a href="#">Stackoverflow</a></h4>
-                            </div>                        	
-                            <img src="http://placehold.it/320x150" alt="">
-                            <div class="caption">
-                                <div class="bk-domain"><a href="#">www.stackoverflow.com</a></div>
- 								<div class="bk-tags">
- 									<div class="tag"><a href="#">html</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">123456789012345678901234</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 									<div class="tag"><a href="#">css</a></div>
- 								</div>
-                            </div>
-                            <div class="ratings">
-                                <div class="personal-change">
-                                	<div class="edit-icon"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>                                	
-                                	<div class="edit-icon"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
-                                </div>
-                                <p>
-                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i> +60 
-                                    <!--<i class="fa fa-thumbs-down" aria-hidden="true"></i> 2-->
-                                </p>
-                            </div>
-                        </div>
-                    </div>                    
-					<a href="#">
-	                    <div class="col-sm-3 col-lg-3 col-md-3 add-button">
-		                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-		                        <p>add bookmark!</p>        
-	                    </div>
-					</a>
+                <div id="myBookmarkBox" class="row">
                 </div>
 
             </div>
@@ -518,12 +296,6 @@
 
     </div>
     <!-- /.container -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
 
 </body>
 

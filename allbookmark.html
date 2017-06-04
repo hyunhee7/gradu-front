@@ -16,8 +16,17 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">  	
 	<link rel="stylesheet" href="./css/reset.css"> 
 	  
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
     <script src="./js/bootstrap.min.js"></script>  
-  	<script src="./js/jquery.ajax-cross-origin.min.js"></script>          
+    <script src="./js/makeBookmarkView.js"></script>
+    <script src="./js/jquery.ajax-cross-origin.min.js"></script>
+    <script>
+	$(document).ready(function() {
+		makeBookmarkView('/bookmarks/all');
+	});
+    </script>
 </head>
 
 <body>
@@ -261,7 +270,7 @@
         	</div>
         	
             <div class="col-md-12" style="margin-top:40px;">
-                <div class="row">
+                <div id="bookmarkBox" class="row">
 
                     <div class="selected-card col-sm-3 col-lg-3 col-md-3">
                         <div class="thumbnail">
@@ -512,10 +521,6 @@
     <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
 
 </body>
 
